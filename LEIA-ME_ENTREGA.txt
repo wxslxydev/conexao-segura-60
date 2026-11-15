@@ -5,28 +5,38 @@ ENTREGAS PRINCIPAIS
 1. Módulo educativo: pasta 01_Modulo_Educativo_e_Quiz.
 2. Produto interativo: quiz incorporado ao módulo educativo.
 3. Artigo científico: pasta 02_Artigo_Cientifico (DOCX editável e PDF).
-4. Registro de testes de usabilidade e acessibilidade: pasta 03_Registro_Sprint_5.
+4. Registro de testes de usabilidade e acessibilidade simulados: pasta 03_Registro_Sprint_5 (DOCX e PDF).
 
-ACESSO AO PROJETO
-Após a publicação, o módulo poderá ser acessado diretamente pela URL pública do Netlify, sem instalação.
-Site publicado: preencher após o deploy.
-Repositório GitHub: preencher com a URL do repositório.
-API Render: preencher após o deploy.
+ACESSO PÚBLICO AO PROJETO
+Site educativo e quiz: https://conexao-segura-60.netlify.app
+Repositório GitHub: https://github.com/wxslxydev/conexao-segura-60
+API do backend: https://conexao-segura-60-api.onrender.com
+
+O site pode ser acessado diretamente pelo link público do Netlify, sem necessidade de criar uma conta ou instalar programas. O quiz envia as respostas à API hospedada no Render.
 
 EXECUÇÃO LOCAL DO MÓDULO
-1. Instale o Node.js LTS.
+1. Instale Node.js 18 ou superior.
 2. Abra o terminal dentro da pasta 01_Modulo_Educativo_e_Quiz.
-3. Execute: npm install
-4. Execute: npm start
-5. Acesse: http://localhost:3000
-6. Verifique a API em: http://localhost:3000/api/health
+3. Para utilizar o backend local, deixe temporariamente window.CONEXAO_API_URL = "" em site/config.js.
+4. Execute: npm install
+5. Execute: npm start
+6. Acesse: http://localhost:3000
+7. Verifique a API em: http://localhost:3000/api/health
 
-PUBLICAÇÃO
-- Render: Root Directory = 01_Modulo_Educativo_e_Quiz.
-- Build Command = npm install.
-- Start Command = npm start.
-- Netlify: Base directory = 01_Modulo_Educativo_e_Quiz.
-- Netlify Publish directory = site.
-- Após criar a API no Render, preencher a URL pública em 01_Modulo_Educativo_e_Quiz/site/config.js e configurar CORS_ORIGIN no Render com a URL do site Netlify.
+Após o teste local, restaure em site/config.js a URL pública da API antes de fazer novo commit para a publicação:
+https://conexao-segura-60-api.onrender.com
 
-Observação: os endereços públicos devem ser preenchidos somente depois da criação efetiva dos serviços.
+PUBLICAÇÃO CONFIGURADA
+Render (backend):
+- Root Directory: 01_Modulo_Educativo_e_Quiz
+- Build Command: npm install
+- Start Command: npm start
+- Variável CORS_ORIGIN: https://conexao-segura-60.netlify.app (sem barra no final)
+
+Netlify (frontend):
+- Base directory: 01_Modulo_Educativo_e_Quiz
+- Build command: vazio
+- Publish directory: site
+
+OBSERVAÇÕES SOBRE A AVALIAÇÃO
+O relatório da Sprint 5 registra uma avaliação simulada por walkthrough com perfis fictícios. Não houve participação de pessoas idosas reais, entrevistas ou coleta de dados pessoais. A publicação e o teste técnico do site e do quiz não substituem uma avaliação de usabilidade com participantes do público-alvo.
