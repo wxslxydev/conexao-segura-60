@@ -1,0 +1,32 @@
+CONEXÃO SEGURA 60+
+Projeto de Extensão Universitária
+
+ENTREGAS PRINCIPAIS
+1. Módulo educativo: pasta 01_Modulo_Educativo_e_Quiz.
+2. Produto interativo: quiz incorporado ao módulo educativo.
+3. Artigo científico: pasta 02_Artigo_Cientifico (DOCX editável e PDF).
+4. Registro de testes de usabilidade e acessibilidade: pasta 03_Registro_Sprint_5.
+
+ACESSO AO PROJETO
+Após a publicação, o módulo poderá ser acessado diretamente pela URL pública do Netlify, sem instalação.
+Site publicado: preencher após o deploy.
+Repositório GitHub: preencher com a URL do repositório.
+API Render: preencher após o deploy.
+
+EXECUÇÃO LOCAL DO MÓDULO
+1. Instale o Node.js LTS.
+2. Abra o terminal dentro da pasta 01_Modulo_Educativo_e_Quiz.
+3. Execute: npm install
+4. Execute: npm start
+5. Acesse: http://localhost:3000
+6. Verifique a API em: http://localhost:3000/api/health
+
+PUBLICAÇÃO
+- Render: Root Directory = 01_Modulo_Educativo_e_Quiz.
+- Build Command = npm install.
+- Start Command = npm start.
+- Netlify: Base directory = 01_Modulo_Educativo_e_Quiz.
+- Netlify Publish directory = site.
+- Após criar a API no Render, preencher a URL pública em 01_Modulo_Educativo_e_Quiz/site/config.js e configurar CORS_ORIGIN no Render com a URL do site Netlify.
+
+Observação: os endereços públicos devem ser preenchidos somente depois da criação efetiva dos serviços.
